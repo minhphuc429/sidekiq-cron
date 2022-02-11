@@ -420,7 +420,7 @@ module Sidekiq
           errors << "'cron' must be set"
         else
           begin
-            @parsed_cron = Fugit.do_parse_cron(@cron)
+            @parsed_cron = Fugit.do_parse(@cron)
           rescue => e
             errors << "'cron' -> #{@cron.inspect} -> #{e.class}: #{e.message}"
           end
@@ -559,7 +559,7 @@ module Sidekiq
       private
 
       def parsed_cron
-        @parsed_cron ||= Fugit.parse_cron(@cron)
+        @parsed_cron ||= Fugit.parse(@cron)
       end
 
       def not_enqueued_after?(time)
