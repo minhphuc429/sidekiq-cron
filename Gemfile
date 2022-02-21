@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'fugit', '~> 1.5'
 gem 'sidekiq', '>= 4.2.1'
-gem 'fugit', '~> 1.1'
 
 group :development do
   gem 'bundler'

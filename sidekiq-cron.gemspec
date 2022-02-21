@@ -65,7 +65,7 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<sidekiq>.freeze, [">= 4.2.1"])
-      s.add_runtime_dependency(%q<fugit>.freeze, ["~> 1.1"])
+      s.add_runtime_dependency(%q<fugit>.freeze, ["~> 1.5"])
       s.add_development_dependency(%q<bundler>.freeze, [">= 0"])
       s.add_development_dependency(%q<simplecov>.freeze, [">= 0"])
       s.add_development_dependency(%q<redis-namespace>.freeze, [">= 1.5.2"])
@@ -85,7 +85,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<guard-minitest>.freeze, [">= 0"])
     else
       s.add_dependency(%q<sidekiq>.freeze, [">= 4.2.1"])
-      s.add_dependency(%q<fugit>.freeze, ["~> 1.1"])
+      s.add_dependency(%q<fugit>.freeze, ["~> 1.5"])
       s.add_dependency(%q<bundler>.freeze, [">= 0"])
       s.add_dependency(%q<simplecov>.freeze, [">= 0"])
       s.add_dependency(%q<redis-namespace>.freeze, [">= 1.5.2"])
@@ -106,7 +106,7 @@ Gem::Specification.new do |s|
     end
   else
     s.add_dependency(%q<sidekiq>.freeze, [">= 4.2.1"])
-    s.add_dependency(%q<fugit>.freeze, ["~> 1.1"])
+    s.add_dependency(%q<fugit>.freeze, ["~> 1.5"])
     s.add_dependency(%q<bundler>.freeze, [">= 0"])
     s.add_dependency(%q<simplecov>.freeze, [">= 0"])
     s.add_dependency(%q<redis-namespace>.freeze, [">= 1.5.2"])
